@@ -13,7 +13,27 @@
     - ctags
     - reattach-to-user-namespace
     - tmux
+    - elasticsearch
+    - redis
+    - memcached
+    - postgresql
+    - awscli
+    - mongo
+    - rbenv
+    - node
+    brew_pkg_with_opts:
+    - { pkg: "macvim" , opts: "with-override-system-vim" }
     cask_packages:
+    - google-chrome
+    - dropbox
     - font-inconsolata-for-powerline
     - iterm2
-    - macvim
+    - 1password
+    - karabiner
+    - sizeup
+    - istat-menus
+    - seil
+    - alfred
+    - dockertoolbox
+    - virtualbox
+    - vagrant

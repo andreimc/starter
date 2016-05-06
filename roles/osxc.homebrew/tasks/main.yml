@@ -1,0 +1,13 @@
+---
+# Ensure that homebrew is installed on your mac
+- include: script.yml
+  when: installation_method == 'script'
+
+- include: clone.yml
+  when: installation_method == 'clone'
+
+- name: Update Homebrew
+  homebrew: update_homebrew=yes
+
+- include: cask.yml
+  when: install_cask

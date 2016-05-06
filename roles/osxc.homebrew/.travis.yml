@@ -1,0 +1,12 @@
+---
+language: objective-c
+before_install:
+- sudo rm -rf /usr/local/Cellar /usr/local/.git && brew cleanup
+- sudo easy_install pip
+install:
+- sudo pip install ansible
+script:
+- echo localhost > inventory
+- ansible-playbook --syntax-check -i inventory test.yml
+- ansible-playbook -i inventory test.yml --connection=local -vvvv -e installation_method=script
+- ansible-playbook -i inventory test.yml --connection=local -vvvv -e installation_method=clone

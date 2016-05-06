@@ -1,0 +1,6 @@
+Bundle 'tpope/vim-sensible'
+Bundle 'tpope/vim-rake'
+Bundle 'nanotech/jellybeans.vim'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'kana/vim-textobj-user'
+Bundle 'nelstrom/vim-textobj-rubyblock'

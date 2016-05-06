@@ -1,0 +1,8 @@
+---
+version: HEAD
+links: []
+env: []
+build: false
+configure_cmd: "./configure"
+build_cmd: make
+install_cmd: make install

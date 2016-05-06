@@ -1,0 +1,7 @@
+---
+brew_packages:
+- ack
+cask_packages:
+- font-inconsolata
+brew_taps:
+- caskroom/fonts
