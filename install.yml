@@ -6,6 +6,7 @@
     brew_taps:
     - caskroom/fonts
     brew_packages:
+    - pow
     - git
     - zsh
     - vim

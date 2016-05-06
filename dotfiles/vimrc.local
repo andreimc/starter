@@ -15,7 +15,55 @@ if (&t_Co == 256 || has('gui_running'))
     colorscheme desert
   endif
 endif
+set guioptions-=T
+let mapleader = ","
+"let g:Tb_UseSingleClick = 1
+""let g:Tb_ModSelTarget = 1
+"let g:Tb_MaxSize = 0
+"set vb
+"" vim-airline
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'kolor'
+if has("gui_macvim") && has("gui_running") || getcwd() =~ "new_projects"
+ autocmd VimEnter * NERDTree
+ autocmd VimEnter * wincmd p
+endif
 
+set hidden
+
+" Mouse
+set mouse=a
+
+" YankRing
+nnoremap <silent> <F4> :YRShow<CR>·
+
+
+" retain the visual selection after having pressed > or <
+vnoremap > >gv
+:vnoremap < <gv
+
+" rspec.vim
+map <Leader>f :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
+let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
+
+
+set clipboard+=unnamed
+
+let g:ctrlp_match_window_reversed = 0
+let g:ctrlp_dont_split = 'NERD_tree_2'
+
+vmap <Leader>z :call I18nTranslateString()<CR>
+
+" Buffer navigation
+map gn :BF<cr>
+map gp :BB<cr>
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
 " Disambiguate ,a & ,t from the Align plugin, making them fast again.
 "
 " This section is here to prevent AlignMaps from adding a bunch of mappings

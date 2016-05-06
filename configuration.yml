@@ -9,6 +9,9 @@
     clone_url: https://github.com/ndbroadbent/scm_breeze.git
     dest: /Users/{{ ansible_user_id }}/.scm_breeze
   - role: osxc.repository
+    clone_url: https://github.com/tmux-plugins/tpm
+    dest: /Users/{{ ansible_user_id }}/.tmux/plugins/tpm
+  - role: osxc.repository
     clone_url: https://github.com/square/maximum-awesome.git
     dest: /Users/{{ ansible_user_id }}/.vim
     links:
