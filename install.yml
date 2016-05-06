@@ -6,35 +6,35 @@
     brew_taps:
     - caskroom/fonts
     brew_packages:
-    - pow
-    - git
-    - zsh
-    - vim
-    - the_silver_searcher
-    - ctags
-    - reattach-to-user-namespace
-    - tmux
-    - elasticsearch
-    - redis
-    - memcached
-    - postgresql
     - awscli
+    - ctags
+    - elasticsearch
+    - git
+    - memcached
     - mongo
-    - rbenv
     - node
+    - postgresql
+    - pow
+    - rbenv
+    - reattach-to-user-namespace
+    - redis
+    - the_silver_searcher
+    - tmux
+    - zsh
     brew_pkg_with_opts:
     - { pkg: "macvim" , opts: "with-override-system-vim" }
     cask_packages:
-    - google-chrome
+    - 1password
+    - alfred
+    - atom
+    - dockertoolbox
     - dropbox
     - font-inconsolata-for-powerline
-    - iterm2
-    - 1password
-    - karabiner
-    - sizeup
+    - google-chrome
     - istat-menus
+    - iterm2
+    - karabiner
     - seil
-    - alfred
-    - dockertoolbox
-    - virtualbox
+    - sizeup
     - vagrant
+    - virtualbox
