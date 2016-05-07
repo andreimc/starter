@@ -79,3 +79,4 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.scm_breeze/scm_breeze.sh
+alias vi=vim

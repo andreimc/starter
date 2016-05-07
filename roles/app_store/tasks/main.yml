@@ -2,7 +2,22 @@
 - name: Sign in with mas
   shell: "mas signin {{ appleid }} {{ applepass }}"
   ignore_errors: true
+
+- name: Check installed apps
+  command: mas list
+  register: installed_apps
+  ignore_errors: true
+
+- name: already installed apps
+  debug: msg="{{ installed_apps.stdout }}"
+
 - name: Get app from store
-  shell: "mas search {{ item }} | head -n 1 | cut -f 1 -d ' ' | xargs mas install"
+  shell: "mas search '{{ item }}' | head -n 1 | cut -f 1 -d ' ' | xargs mas install"
   with_items: apps
+  when: item not in installed_apps.stdout
+  ignore_errors: true
+
+- name: Accept xcode license
+  command: 'sudo xcodebuild -license accept'
+  sudo: yes
   ignore_errors: true
