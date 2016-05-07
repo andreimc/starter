@@ -29,6 +29,7 @@
     dest: /Users/{{ ansible_user_id }}/.vim/bundle/Vundle.vim
   post_tasks:
   - copy: src=dotfiles/zshrc dest=/Users/{{ ansible_user_id }}/.zshrc backup=yes
+  - copy: src=dotfiles/gemrc dest=/Users/{{ ansible_user_id }}/.gemrc backup=yes
   - copy: src=dotfiles/vimrc.local dest=/Users/{{ ansible_user_id }}/.vimrc.local backup=yes
   - copy: src=dotfiles/vimrc.bundles.local dest=/Users/{{ ansible_user_id }}/.vimrc.bundles.local backup=yes
   - copy: src=dotfiles/tmux.conf.local dest=/Users/{{ ansible_user_id }}/.tmux.conf.local backup=yes

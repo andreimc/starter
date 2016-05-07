@@ -3,3 +3,4 @@
 - include: app_store.yml
 - include: install.yml
 - include: configuration.yml
+- include: ruby_install.yml

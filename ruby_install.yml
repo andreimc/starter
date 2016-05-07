@@ -1,0 +1,19 @@
+---
+- hosts: all
+  vars:
+    ruby_version: 2.3.1
+  tasks:
+    - name: check ruby version
+      command: ruby --version
+      register: current_ruby
+    - name: install latest ruby
+      command: rbenv install {{ ruby_version }}
+      when: ruby_version not in current_ruby.stdout
+      ignore_errors: true
+    - name: set ruby global
+      command: rbenv global {{ ruby_version }}
+    - name: install system gems
+      gem:
+        name: "{{ item }}"
+      with_items:
+        - tmuxinator
