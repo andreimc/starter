@@ -8,17 +8,25 @@
     brew_packages:
     - awscli
     - ctags
+    - cmake
     - elasticsearch
     - git
+    - golang
+    - hub
+    - imagemagick
     - memcached
     - mongo
     - node
+    - phantomjs
     - postgresql
     - pow
+    - qt5
     - rbenv
     - reattach-to-user-namespace
     - redis
     - the_silver_searcher
+    - tmate
+    - tig
     - tmux
     - zsh
     brew_pkg_with_opts:
@@ -37,7 +45,8 @@
     - karabiner
     - seil
     - sizeup
+    - slack
     - spotify
     - vagrant
     - virtualbox
-    - slack
+    - vlc

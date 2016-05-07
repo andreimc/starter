@@ -15,6 +15,10 @@ APPLE_ID=user APPLE_PASS=password ./bootstrap.sh
 
 It will propmpt you for password like sudo password a few times
 
+After you install vim plugins you need to:
 
-
+```
+cd ~/.vim/bundle/YouCompleteMe
+./install.py --all
+```
 
