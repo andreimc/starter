@@ -82,3 +82,4 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.scm_breeze/scm_breeze.sh
 eval "$(hub alias -s)"
+eval "$(docker-machine env default)"

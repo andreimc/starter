@@ -14,6 +14,7 @@
     - golang
     - hub
     - imagemagick
+    - kubectl
     - memcached
     - mongo
     - node
