@@ -6,6 +6,9 @@
     clone_url: https://github.com/robbyrussell/oh-my-zsh.git
     dest: /Users/{{ ansible_user_id }}/.oh-my-zsh
   - role: osxc.repository
+    clone_url: https://github.com/zsh-users/zsh-syntax-highlighting.git
+    dest: /Users/{{ ansible_user_id }}/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+  - role: osxc.repository
     clone_url: https://github.com/ndbroadbent/scm_breeze.git
     dest: /Users/{{ ansible_user_id }}/.scm_breeze
   - role: osxc.repository
