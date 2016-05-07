@@ -12,8 +12,3 @@
       ignore_errors: true
     - name: set ruby global
       command: rbenv global {{ ruby_version }}
-    - name: install system gems
-      gem:
-        name: "{{ item }}"
-      with_items:
-        - tmuxinator
