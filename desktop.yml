@@ -1,4 +1,5 @@
 ---
 # Your run is described here
+- include: app_store.yml
 - include: install.yml
 - include: configuration.yml

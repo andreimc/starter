@@ -31,6 +31,12 @@ if [[ ! -x /usr/local/bin/ansible ]]; then
     pip install ansible==1.9.4
 fi
 
+# Download and install Mas for AppStore Automation
+if [[ ! -x /usr/local/bin/mas ]]; then
+    echo "Info   | Install   | Mas"
+    brew install mas
+fi
+
 # Download and install Java
 if [[ ! -x /usr/bin/java ]]; then
     echo "Info   | Install   | Java"
@@ -42,4 +48,4 @@ fi
 # This should be subsequently updated in shell settings
 export PATH=/usr/local/bin:$PATH
 
-ansible-playbook desktop.yml -K
+ansible-playbook desktop.yml -K -e "appleid=$APPLE_ID applepass=$APPLE_PASS"

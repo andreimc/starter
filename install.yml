@@ -2,7 +2,7 @@
 # Here we describe every software we may want to install
 - hosts: all
   roles:
-  - role: osxc.packages
+  - role: packages
     brew_taps:
     - caskroom/fonts
     brew_packages:
@@ -25,6 +25,7 @@
     - { pkg: "macvim" , opts: "with-override-system-vim" }
     cask_packages:
     - 1password
+    - appzapper
     - alfred
     - atom
     - dockertoolbox
@@ -36,5 +37,7 @@
     - karabiner
     - seil
     - sizeup
+    - spotify
     - vagrant
     - virtualbox
+    - slack

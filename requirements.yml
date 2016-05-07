@@ -2,5 +2,5 @@
 # Ansible Galaxy Requirements
 - src: osxc.common-env
 - src: osxc.homebrew
-- src: osxc.packages
+- src: https://github.com/osxc/packages.git
 - src: osxc.repository

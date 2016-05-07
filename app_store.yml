@@ -1,0 +1,12 @@
+# Here we describe every software we may want to install from the app store (node apps need to be purchased in your account even free apps)
+- hosts: all
+  roles:
+  - role: app_store
+    apps:
+      - Caffeine
+      - CC Menu
+      - Dash 3
+      - Pocket
+      - Sunrise Calendar
+      - WeChat
+      - Xcode
