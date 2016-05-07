@@ -1,0 +1,12 @@
+---
+- hosts: all
+  vars:
+    brew_services:
+      - postgresql
+      - elasticsearch
+      - redis
+      - memcached
+  tasks:
+    - name: start brew service {{ item }}
+      command: brew services start {{ item }}
+      with_items: brew_services
