@@ -25,6 +25,7 @@
     - rbenv
     - reattach-to-user-namespace
     - redis
+    - terraform
     - the_silver_searcher
     - tmate
     - tig
@@ -45,6 +46,7 @@
     - iterm2
     - karabiner
     - seil
+    - skype
     - sizeup
     - slack
     - spotify
