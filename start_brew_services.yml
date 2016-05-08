@@ -6,6 +6,7 @@
       - elasticsearch
       - redis
       - memcached
+      - mongo
   tasks:
     - name: start brew service {{ item }}
       command: brew services start {{ item }}
