@@ -10,6 +10,7 @@
     - ctags
     - cmake
     - elasticsearch
+    - elixir
     - git
     - golang
     - hub

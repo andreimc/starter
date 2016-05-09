@@ -83,3 +83,4 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 source ~/.scm_breeze/scm_breeze.sh
 eval "$(hub alias -s)"
 eval "$(docker-machine env default)"
+export EDITOR=vim
