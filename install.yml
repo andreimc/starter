@@ -5,12 +5,15 @@
   - role: packages
     brew_taps:
     - caskroom/fonts
+    - homebrew/dupes
+    - homebrew/versions
     brew_packages:
     - awscli
     - ctags
     - cmake
     - elasticsearch
     - elixir
+    - apple-gcc42
     - git
     - golang
     - hub
@@ -22,7 +25,7 @@
     - phantomjs
     - postgresql
     - pow
-    - qt5
+    - qt55
     - rbenv
     - reattach-to-user-namespace
     - redis

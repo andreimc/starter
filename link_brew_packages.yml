@@ -1,0 +1,9 @@
+---
+- hosts: all
+  vars:
+    brew_packages:
+      - qt55
+  tasks:
+    - name: link brew package {{ item }}
+      command: brew link {{ item }} --force
+      with_items: brew_packages

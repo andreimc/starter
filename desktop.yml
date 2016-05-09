@@ -5,3 +5,4 @@
 - include: configuration.yml
 - include: ruby_install.yml
 - include: start_brew_services.yml
+- include: link_brew_packages.yml
