@@ -22,3 +22,4 @@ cd ~/.vim/bundle/YouCompleteMe
 ./install.py --all
 ```
 
+this is no longer maintained see https://github.com/andreimc/machine_bootstrap
